@@ -15,25 +15,25 @@ namespace project
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}",
+                url: "Home",
                 defaults: new { controller = "Home", action = "Home" }
             );
 
             routes.MapRoute(
                 name: "Login",
-                url: "{controller}/{action}",
+                url: "Login",
                 defaults: new { controller = "Home", action = "Login" }
             );
 
             routes.MapRoute(
                 name: "Register",
-                url: "{controller}/{action}",
+                url: "Register",
                 defaults: new { controller = "Home", action = "Register" }
             );
 
             routes.MapRoute(
                name: "User_Profile",
-               url: "{controller}/{action}",
+               url: "Home/User_Profile",
                defaults: new { controller = "Home", action = "User_Profile" }
            );
 
