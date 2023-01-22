@@ -1,0 +1,142 @@
+﻿
+@{
+    ViewBag.Title = "User_Profile";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-center">
+                <div class="col-4 border border-secondary rounded" style="padding:15px;">
+                    <div class="d-flex bd-highlight">
+                        <div class="p-2 flex-grow-1 bd-highlight">User Profile</div>
+                        <div class="p-2 bd-highlight"> <a>X</a> </div>
+                    </div>
+                    <hr />
+                    <div style="margin-left:20px">
+                        <label for="uname">Name</label> <br>
+                        <input type="text" name="name" class="form-control" required><br>
+
+                        <label for="psw">Address</label><br>
+                        <textarea cols="3" class="form-control"></textarea> <br>
+
+                        <label for="uname">Birth Of Date</label> <br>
+                        <input type="text" placeholder="dd/mm/yyyy" name="uname" class="form-control" required><br>
+
+                        <label for="uname">Email</label> <br>
+                        <input type="text" name="uname" class="form-control" required><br>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-8"></div>
+                        <div class="col-4"><button type="submit" class="btn btn-primary">Update</button></div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-4"><button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addSkillModal">Add New</button></div>
+                        <div class="col-8"></div>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Skill</th>
+                                <th scope="col">Level</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">Skil A</td>
+                                <td>Advance</td>
+                                <td><button type="submit" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editSkillModal">Edit</button><button type="submit" class="btn btn-danger btn-sm">Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Skil B</td>
+                                <td>Basic</td>
+                                <td><button type="submit" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editSkillModal">Edit</button><button type="submit" class="btn btn-danger btn-sm">Delete</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Add New Skill-->
+<div class="modal fade" id="addSkillModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Add User Skill</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <label for="uname">Skill</label> <br>
+                <div class="input-group mb-3">
+                    <select class="form-select" id="inputGroupSelect02">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <label class="input-group-text" for="inputGroupSelect02">Options</label>
+                </div>
+                <label for="uname">Level</label> <br>
+                <div class="input-group mb-3">
+                    <select class="form-select" id="inputGroupSelect02">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <label class="input-group-text" for="inputGroupSelect02">Options</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Edit Skill-->
+<div class="modal fade" id="editSkillModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Edit User Skill</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <label for="uname">Skill</label> <br>
+                <div class="input-group mb-3">
+                    <select class="form-select" id="inputGroupSelect02">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <label class="input-group-text" for="inputGroupSelect02">Options</label>
+                </div>
+                <label for="uname">Level</label> <br>
+                <div class="input-group mb-3">
+                    <select class="form-select" id="inputGroupSelect02">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <label class="input-group-text" for="inputGroupSelect02">Options</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
